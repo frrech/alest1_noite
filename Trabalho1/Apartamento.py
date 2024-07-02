@@ -1,24 +1,15 @@
 from Torre import Torre
 
 class Apartamento:
-    def __init__(self, id, numero, torre, vaga, proximo) -> None:
+    def __init__(self, id, numero, torre) -> None:
         self.id = id
         self.numero = numero
         self.torre = torre
-        self.vaga = vaga
-        self.proximo = proximo
+        self.vaga = None
     
-    def cadastrar(self, id, torre):
-        pass
-
-    def pop():
-        pass
-
-    def push():
-        pass
+    def getNumero(self):
+        return self.numero
     
-    def peek():
-        pass
-
-    def imprimir():
-        pass
+    def __str__(self):
+        return f"ID: {self.id} - Nro do ap.: {self.numero} - Nome da torre: {self.torre.getNome()}"
+    

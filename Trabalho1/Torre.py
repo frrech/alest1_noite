@@ -3,16 +3,9 @@ class Torre:
         self.id = id
         self.nome = nome
         self.endereco = endereco
-    
-    def cadastrar(self, id):
-        nome = input("Digite o nome da torre: ")
-        endereco = input("Digite o endereco da torre: ")
-        if id != None and nome != "" and endereco != "":
-            self.id = id
-            self.nome = nome
-            self.endereco = endereco
-        else:
-            print("Campo de nome ou endereço foram deixados vazios.")
 
-    def imprimir(self):
-        print("ID da torre: ", self.id,"; Nome da torre: ", self.nome, "; Endereço:", self.endereco)
+    def getNome(self):
+        return self.nome
+
+    def __str__(self):
+        return "ID da torre: "+ str(self.id)+" - Nome da torre: "+ self.nome+ " - Endereço: "+ self.endereco
