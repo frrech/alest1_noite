@@ -6,4 +6,7 @@ class No:
         self.proximo = None
     
     def __str__(self):
-        return f"{self.apartamento + self.proximo.getNumero}"
+        return f"{self.apartamento}"
+    
+    def getNumero(self):
+        return self.apartamento.getNumero()
